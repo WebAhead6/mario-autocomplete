@@ -62,6 +62,8 @@ function buildList(data) {
 
         suggestion.style.cursor = 'pointer'
 
+        // this is just an idea of someone wanted to add more functionality
+        // to the suggestions list
         suggestion.addEventListener('click', () => {
             console.log(suggestion)
         })

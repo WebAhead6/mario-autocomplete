@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nodemon ./tests/index.js | tap-spec",
     "start": "node server/app.js",
     "dev": "nodemon server/app.js"
   },
@@ -14,5 +14,8 @@
     "nodemon": "^2.0.4",
     "supertest": "^4.0.2",
     "tape": "^5.0.1"
+  },
+  "dependencies": {
+    "tap-spec": "^5.0.0"
   }
 }
