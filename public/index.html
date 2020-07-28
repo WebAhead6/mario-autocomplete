@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body>
+
+
+    <div class="autocomplete-container">
+        <!-- the list attribute should equal the id of the datalist -->
+        <label for="autocomplete">Just start with the letter m</label>
+        <input type="text" id="autocomplete" list="suggestions-list">
+        <datalist id="suggestions-list" class="hide"></datalist>
+    </div>
+
+    <!-- a different way to render the suggestions other than a datalsit -->
+    <div id="alternative-list">
+
+    </div>
+
+    <div id="error-box">
+
+    </div>
+
+</body>
+<script src="/public/index.js"></script>
+
+</html>
