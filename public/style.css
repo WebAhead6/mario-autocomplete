@@ -1,14 +1,14 @@
 .autocomplete-container {
     display: flex;
     flex-direction: column;
-    max-width: 25vw;
     font-size: 25px;
     font-weight: bold;
     margin: 20px auto 0px auto;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 85vw;
 }
 
-.autocomplete-container > label {
+.autocomplete-container>label {
     margin-bottom: 10px;
 }
 
@@ -16,9 +16,23 @@
     display: flex;
     flex-direction: column;
     margin: 0px auto;
-    max-width: 25vw;
+    max-width: 85vw;
 }
 
 .hide {
     display: none !important;
+}
+
+@media (min-width: 6 00px) {
+    .autocomplete-container {
+        max-width: 25vw;
+    }
+
+    .autocomplete-container>label {
+        margin-bottom: 10px;
+    }
+
+    #alternative-list {
+        max-width: 25vw;
+    }
 }

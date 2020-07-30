@@ -13,7 +13,8 @@ const types = {
 module.exports = (req, res) => {
     const url = req.url;
     const urlArray = url.split(".");
-    const extension = urlArray[1];
+    // urlArray.length - 1 cause in case of index.test.js
+    const extension = urlArray[urlArray.length - 1];
     const type = types[extension];
 
     const filePath = path.join(__dirname, "../..", url);
